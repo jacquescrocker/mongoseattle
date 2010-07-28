@@ -1,1 +1,823 @@
-My GitHub Page
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title></title>
+
+  <link rel="stylesheet" href="./css/reset.css" type="text/css"/>
+  <link rel="stylesheet" href="./css/showoff.css" type="text/css"/>
+
+  <script type="text/javascript" src="./js/jquery-1.4.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.cycle.all.js"></script>
+  <script type="text/javascript" src="./js/jquery-print.js"></script>
+  <script type="text/javascript" src="./js/jquery.batchImageLoad.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.doubletap-0.1.js"></script>
+
+  <script type="text/javascript" src="./js/fg.menu.js"></script>
+  <script type="text/javascript" src="./js/showoff.js"></script>
+  <script type="text/javascript" src="./js/jTypeWriter.js"> </script>
+  <script type="text/javascript" src="./js/sh_main.min.js"></script>
+  <script type="text/javascript" src="./js/core.js"></script>
+  <script type="text/javascript" src="./js/showoffcore.js"></script>
+
+  <link type="text/css" href="./css/fg.menu.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/theme/ui.all.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/sh_style.css" rel="stylesheet" >
+
+
+    <link rel="stylesheet" href="file/code.css" type="text/css"/>
+
+
+
+
+  <script type="text/javascript">
+  $(function(){
+    setupPreso(false, '.');
+  });
+  </script>
+</head>
+
+<body>
+
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu"><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"></div>
+
+<div id="help">
+  <table>
+    <tr><td class="key">space, &rarr;</td><td>next slide</td></tr>
+    <tr><td class="key">&larr;</td><td>previous slide</td></tr>
+    <tr><td class="key">d</td><td>debug mode</td></tr>
+    <tr><td class="key">## &lt;ret&gt;</td><td>go to slide #</td></tr>
+    <tr><td class="key">c</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+    <tr><td class="key">r</td><td>reload slides</td></tr>
+    <tr><td class="key">z</td><td>toggle help (this)</td></tr>
+  </table>
+</div>
+
+<div id="preso">loading presentation...</div>
+<div id="footer">
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+</div>
+
+<div id="slides" class="offscreen" style="display:none;">
+<div class="slide" data-transition="none"><div class="content" ref="01_intro/intro/1">
+<h1>Ruby Development<br>and Mongoid</br></h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="01_intro/intro/2">
+<h1>Jacques Crocker</h1>
+
+<ul>
+<li>railsjedi.com</li>
+<li>@railsjedi</li>
+<li>github.com/railsjedi</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="01_intro/intro/3">
+<h1>My Personal Likes</h1>
+
+<ul>
+<li>i like working on ui more than backend</li>
+<li>i like seeing my web app interfaces being used</li>
+<li>i like it when the apps are fast and responsive</li>
+<li>i like the idea of having a scalable app</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="02_mongodb/overview/1">
+<h1>Why MongoDB?</h1>
+
+<ul>
+<li><p>Cuz its fast</p></li>
+<li><p>Can serve more lolcatz than anyone</p></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="02_mongodb/overview/2">
+<h1>Serving Lolcatz</h1>
+
+<p><img src="lolcatz.jpg" style="float:left"/>
+
+<ul>
+<li><p><strong>Mysql</strong>: 1000 lolcatz/sec</p></li>
+<li><p><strong>CouchDB</strong>: 1500 lolcatz/sec</p></li>
+<li><p><strong>MongoDB</strong>: 2500 lolcatz/sec</p></li>
+</ul>
+</p>
+</div>
+</div><div class="slide" data-transition="none">
+  <div class="content bullets" ref="02_mongodb/overview/3">
+<h1>Serving Lolcatz</h1>
+
+<p><img src="lolcatz.jpg" style="float:left"/>
+
+<ul>
+<li><p><strong>Mysql</strong>: 1000 lolcatz/sec</p></li>
+<li><p><strong>CouchDB</strong>: 1500 lolcatz/sec</p></li>
+<li><p><strong>MongoDB</strong>: 2500 lolcatz/sec</p></li>
+<li><p><div style="clear:left"><br/><strong>Hadoop</strong>: 1000000000 lolcatz/sec</div></p>
+</li>
+</ul>
+</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="02_mongodb/overview/4">
+<h1>Also...</h1>
+
+<ul>
+<li>I want to go from idea to working app as fast as humanely possible</li>
+<li>I want to turn harebrain ideas into working apps</li>
+<li>I want to iterate fast on these projects</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="02_mongodb/overview/5">
+<h1>But seriously... what is the point?</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="02_mongodb/overview/6">
+<h1>End Users.</h1>
+
+<ul>
+<li>They don't care that you're using Mongo.</li>
+<li>Just build better web apps</li>
+<li>MongoDB has been a win for me because it allows me to focus more on what matters</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="03_mongoid/mongoid/1">
+<h1>Introducing Mongoid</h1>
+
+<ul>
+<li>Built by Durran Jordan (@modetojoy)</li>
+<li>Object Document Mapper</li>
+<li>Easily define MongoDB backed Models</li>
+<li>Provides support for rich associations</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="03_mongoid/mongoid/2">
+<h1>Why Mongoid?</h1>
+
+<ul>
+<li>Full Rails3 support</li>
+<li>Supports Atomic updates on records</li>
+<li>Chainable querying API</li>
+<li>Great documentation (mongoid.org)</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none">
+  <div class="content bullets incremental" ref="03_mongoid/mongoid/3">
+<h1>Mongoid with Rails3</h1>
+
+<ul>
+<li>Implements ActiveModel<br>(validations, form builders, etc)</br>
+<li>Seamless integration with Devise<br>(authentication framework)</br>
+<li>Works with rails3 generators<br><code>rails generate model Post</code></br>
+</li>
+</li>
+</li>
+</ul></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="03_mongoid/mongoid/4">
+<h1>Easy to Get Started</h1>
+
+<ul>
+<li><code>rails new my_app_name \ </code></li>
+<li><code>-m http://tiny.cc/mongoid-rails</code></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="03_mongoid/mongoid/5">
+<h1>Atomic Updates on Records</h1>
+
+<ul>
+<li>Problem with document oriented databases:</li>
+<li>What happens when 2 people are editing the same record?</li>
+<li>If we save the entire document, one person's changes can overwrite the other</li>
+<li>Even though they were editing different fields</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="03_mongoid/mongoid/6">
+<h1>Atomic Updates on Records (cont...)</h1>
+
+<ul>
+<li>Mongoid keeps track of what changed</li>
+<li>And pushes only those updates to MongoDB when document changes</li>
+<li><code>$set, $push, $pushAll, $unset</code><br> http://www.mongodb.org/display/DOCS/Updating</br>
+</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="03_mongoid/mongoid/7">
+<h1>BUT...</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="03_mongoid/mongoid/8">
+<h1>Don't be afraid of the Mongo Ruby Driver</h1>
+
+<ul>
+<li><p>Mongoid gives you access at every step to the MongoDB Ruby Driver</p></li>
+<li><p><code>Post.db #=&gt; #&lt;Mongo::DB:0x1037f6468 ...&gt;</code></p></li>
+<li><p>Ruby Driver tutorial: http://www.mongodb.org/display/DOCS/Ruby+Tutorial</p></li>
+<li><p>http://api.mongodb.org/ruby</p></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="03_mongoid/mongoid/9">
+<h1>Mongoid helps get you started</h1>
+
+<ul>
+<li><p>But it doesn't get in the way</p></li>
+<li><p>MongoDB has as great API</p></li>
+<li><p>When you need speed, skip the middleman. Use the driver</p></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content smbullets incremental" ref="03_mongoid/mongoid/10">
+<h1>But really... the reason Mongoid is so great...</h1>
+
+<ul>
+<li><p>COMMMUNITY!</p></li>
+<li><p>Active IRC (#mongoid on freenode)</p></li>
+<li><p>Mailing List<br>http://groups.google.com/group/mongoid</br></p>
+<li><p>Tons of commit activity, from all over the globe</p></li>
+<li><p>It's about working together</p></li>
+<li><p>To build the best Ruby persistence framework ever</p></li>
+</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="04_basics/basics/1">
+<h1>Ok... now for some code</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="04_basics/basics/2">
+<h1>Mongoid</h1>
+
+<pre class="sh_ruby"><code>class Person
+  include Mongoid::Document
+
+  field :first_name
+  field :last_name
+  field :arrival_date, :type =&gt; Date
+  field :division
+  field :clearance_level, :type =&gt; Integer, :default =&gt; 0
+
+  embeds_many :assignments
+
+  scope :security_personnel, where(:division =&gt; 'security')
+end
+
+jake = Person.security_personnel.where(:first_name =&gt; 'Jake',
+                                       :last_name =&gt; 'Sully').first</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="04_basics/basics/3">
+<h1>Mongoid::Document</h1>
+
+<pre class="sh_ruby"><code>class Person
+  include Mongoid::Document
+
+  field :first_name
+  field :last_name
+  field :arrival_date, :type =&gt; Date
+  field :division
+  field :clearance_level, :type =&gt; Integer, :default =&gt; 0
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="04_basics/basics/4">
+<h1>Embedded Associations</h1>
+
+<pre class="sh_ruby"><code>class Person
+  include Mongoid::Document
+
+  embeds_many :assignments
+end
+
+class Assignment
+  include Mongoid::Document
+
+  embedded_in :person
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="04_basics/basics/5">
+<h1>"Relational" Associations</h1>
+
+<pre class="sh_ruby"><code>class Person
+  include Mongoid::Document
+
+  references_many :assignments
+end
+
+class Assignment
+  include Mongoid::Document
+
+  referenced_in :person
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="04_basics/basics/6">
+<h1>Validations (ActiveModel)</h1>
+
+<pre class="sh_ruby"><code>class Assignment
+  include Mongoid::Document
+
+  field :name
+  field :start_date, :type =&gt; Date
+  field :end_date, :type =&gt; Date
+
+  validates_presence_of :name, :start_date
+
+  validates_uniqueness_of :name, :scope =&gt; :course_id
+
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="04_basics/basics/7">
+<h1>Finders</h1>
+
+<pre class="sh_ruby"><code>Person.where(:first_name =&gt; "Grace")
+
+Person.where(:aliases =&gt; ["The Dude", ...])
+
+Person.where(:gender =&gt; "Male").and(:age.gt =&gt; 18)
+
+Person.excludes(:status =&gt; "Married")
+
+Person.in(:status =&gt; ["Single", "Divorced"])
+
+Person.where(:age.lte =&gt; 55)</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content smbullets incremental" ref="04_basics/basics/8">
+<h1>Lazy Evaluation</h1>
+
+<ul>
+<li><p>All mongoid finders return a "Criteria" object</p></li>
+<li><p>Avoid execution of the query till the last possible moment</p></li>
+<li><p>mix/match queries, and extend queries already constructed</p></li>
+<li><p>Waits for a "kicker":</p></li>
+<li><p><code>first</code></p></li>
+<li><code>entries</code></li>
+<li><code>each</code></li>
+<li><code>map</code></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="04_basics/basics/9">
+<h1>Lazy Evaluation</h1>
+
+<pre class="sh_ruby"><code>grace = Person.where(:first_name =&gt; "Grace")
+
+puts grace
+#&lt;Mongoid::Criteria:0x10362a3c8 @selector={:name=&gt;"Grace"} ...&gt;
+
+# extend the query dynamically
+grace_under_fire = grace.where(:status =&gt; "Fired")
+
+# give it a "kick"
+grace_under_fire.first #=&gt; grabs the first entry
+grace_under_fire.entries #=&gt; grabs all entries</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="04_basics/basics/10">
+<h1>Find or Create / Initialize</h1>
+
+<pre class="sh_ruby"><code>
+Person.find_or_create_by(:first_name =&gt; "Miles")
+
+person = Person.find_or_initialize_by(:first_name =&gt; "Miles")</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="04_basics/basics/11">
+<h1>Callbacks (ActiveModel)</h1>
+
+<pre class="sh_ruby"><code>class Person
+  include Mongoid::Document
+
+  field :first_name
+  field :last_name
+
+  before_save :update_current_location
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="04_basics/basics/12">
+<h1>Persistence</h1>
+
+<pre class="sh_ruby"><code>grace = Person.new(:first_name =&gt; "Grace",
+                   :last_name =&gt; "Augustine")
+grace.save
+
+jake = Person.create(:first_name =&gt; "Jake",
+                     :last_name =&gt; "Sully")
+jake.update_attributes(:first_name =&gt; "Toruk",
+                       :last_name =&gt; "Makto")
+
+miles = Person.create(:first_name =&gt; "Miles",
+                      :last_name =&gt; "Quaritch")
+miles.destroy
+
+# Mongoid also supports rails3 nested forms</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="05_criteria/criteria/1">
+<h1>Criteria</h1>
+
+<ul>
+<li>Queries</li>
+<li>Sorting, Pagination, Limiting Data</li>
+<li>Geospatial Indexing</li>
+<li>Scopes</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="05_criteria/criteria/2">
+<h1>Find by id</h1>
+
+<pre class="sh_ruby"><code>Person.criteria.id("4bd9f19f2557ab0676000003").first
+
+# MongoDB query:
+find({:_id=&gt;"4bd9f19f2557ab0676000003"}, {}).limit(-1)</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="05_criteria/criteria/3">
+<h1>Where</h1>
+
+<pre class="sh_ruby"><code>Person.where(:clearance_level.gt =&gt; 3).entries
+
+# MongoDB query:
+find({:clearance_level=&gt;{"$gt"=&gt;3}}, {})</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="05_criteria/criteria/4">
+<h1><code>$all</code></h1>
+
+<pre class="sh_ruby"><code>Person.all_in(:first_name =&gt; ['Grace', 'Jake']).entries
+
+# MongoDB query:
+find({:first_name=&gt;{"$all"=&gt;["Grace", "Jake"]}}, {})</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="05_criteria/criteria/5">
+<h1><code>$in</code></h1>
+
+<pre class="sh_ruby"><code>Person.any_in(:first_name =&gt; ['Grace', 'Jake']).entries
+
+# MongoDB query:
+find({:first_name=&gt;{"$in"=&gt;["Grace", "Jake"]}}, {})</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="05_criteria/criteria/6">
+<h1><code>$ne</code></h1>
+
+<pre class="sh_ruby"><code>Person.excludes(:first_name =&gt; 'Grace').entries
+
+# MongoDB query:
+find({:first_name=&gt;{"$ne"=&gt;"Grace"}}, {})</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="05_criteria/criteria/7">
+<h1><code>$nin</code></h1>
+
+<pre class="sh_ruby"><code>Person.not_in(:first_name =&gt; 'Jake').entries
+
+# MongoDB query:
+find({:first_name=&gt;{"$nin"=&gt;["Jake"]}}, {})</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="05_criteria/criteria/8">
+<h1>Sorting</h1>
+
+<pre class="sh_ruby"><code>Person.descending(:last_name).entries
+
+# MongoDB query:
+find({}, {}).sort([:last_name, :desc])
+
+Person.order_by(:name =&gt; :asc, :age =&gt; :desc).entries
+
+# MongoDB query:
+find({}, {}).sort([:name, :asc], [:age, :desc])</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="05_criteria/criteria/9">
+<h1>Pagination</h1>
+
+<pre class="sh_ruby"><code>
+# will_paginate compatible out of the box
+Person.paginate :page =&gt; params[:page], :per_page =&gt; 20
+
+# MongoDB query if params[:page] =&gt; 2
+find({}, {}).skip(40).limit(20)</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="05_criteria/criteria/10">
+<h1>Limiting returned fields</h1>
+
+<pre class="sh_ruby"><code>Person.only(:first_name, :last_name).entries
+
+# easy way to avoid the overhead of huge embedded fields
+
+# MongoDB query:
+find({}, {:_type=&gt;1, :last_name=&gt;1, :first_name=&gt;1})</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="05_criteria/criteria/11">
+<h1>Geospatial Indexing</h1>
+
+<pre class="sh_ruby"><code>class Location
+  include Mongoid::Document
+  field :name
+  field :lat_long, :type =&gt; Array
+  index [[:lat_long, Mongo::GEO2D]]
+end
+
+Location.near(:lat_long =&gt; [30, 30])
+
+# MongoDB query:
+find({:lat_long=&gt;{"$near"=&gt;[30, 30]}}, {})</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="06_scopes/named_scopes/1">
+<h1>Scopes</h1>
+
+<pre class="sh_ruby"><code>class Person
+  scope :security_personnel, where(:division =&gt; 'security')
+end
+
+Person.security_personnel.entries
+
+# MongoDB query:
+find({:division=&gt;"security"}, {})</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="06_scopes/named_scopes/2">
+<h1>Scopes accept parameters</h1>
+
+<pre class="sh_ruby"><code>class Person
+  scope :cleared_for, lambda { |level|
+    where(:clearance_level.gte =&gt; level)
+  }
+end
+
+Person.cleared_for(2).entries
+
+# MongoDB query:
+find({:clearance_level=&gt;{"$gte"=&gt;2}}, {})</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="06_scopes/named_scopes/3">
+<h1>Chain with scopes or criteria</h1>
+
+<pre class="sh_ruby"><code>Person.security_personnel.cleared_for(1).entries
+
+# MongoDB query:
+find({:clearance_level=&gt;{"$gte"=&gt;1}, :division=&gt;"security"}, {})
+
+Person.security_personnel.where(:first_name =&gt; 'Jake').entries
+
+# MongoDB query:
+find({:division=&gt;"security", :first_name=&gt;"Jake"}, {})</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="07_persistence/strategies/1">
+<h1>Inserting a new document</h1>
+
+<pre class="sh_ruby"><code>jake = Person.new(:last_name =&gt; "Sully")
+jake.save
+
+# MongoDB query:
+insert([{"created_at"=&gt;Fri Apr 30 15:05:40 UTC 2010,
+  "updated_at"=&gt;Fri Apr 30 15:05:40 UTC 2010,
+  "_id"=&gt;"4bdaf1c42557ab099f00000b",
+  "_type"=&gt;"Person",
+  "clearance_level"=&gt;0,
+  "last_name"=&gt;"Sully"}])</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="07_persistence/strategies/2">
+<h1>Inserting a tree of data</h1>
+
+<pre class="sh_ruby"><code>jake = Person.new(:last_name =&gt; "Sully")
+jake.assignments.build(:name =&gt; "Avatar Security")
+jake.save
+
+# MongoDB query:
+insert([{"created_at"=&gt;Fri Apr 30 15:07:14 UTC 2010,
+  "updated_at"=&gt;Fri Apr 30 15:07:14 UTC 2010,
+  "_id"=&gt;"4bdaf20f2557ab099f00000c",
+  "_type"=&gt;"Person",
+  "clearance_level"=&gt;0,
+  "last_name"=&gt;"Sully",
+  "assignments"=&gt;[{
+    "name"=&gt;"Avatar Security",
+    "_id"=&gt;"4bdaf2202557ab099f00000d",
+    "_type"=&gt;"Assignment"}]}])</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="07_persistence/strategies/3">
+<h1>Embeds one</h1>
+
+<pre class="sh_ruby"><code>jake = Person.create(:last_name =&gt; "Sully")
+jake.contact_info = ContactInfo.new(:number =&gt; "4348723")
+jake.save
+
+# MongoDB query
+update({"_id"=&gt;"4bdaf2d82557ab099f00000e"},
+  {"$set"=&gt;{
+    "contact_info"=&gt;{
+      "handle"=&gt;"jsully",
+      "_id"=&gt;"4bdaf3142557ab099f00000f",
+      "_type"=&gt;"ContactInfo"}}})</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="07_persistence/strategies/4">
+<h1>Embeds many</h1>
+
+<pre class="sh_ruby"><code>jake = Person.create(:last_name =&gt; "Sully")
+assignment = Assignment.new(:name =&gt; "Avatar Security")
+jake.assignments &lt;&lt; assignment
+assignment.save
+
+# MongoDB query:
+update({"_id"=&gt;"4bdaf48c2557ab099f000014"},
+  {"$push"=&gt;{
+    "assignments"=&gt;{
+      "name"=&gt;"Avatar Security",
+      "_id"=&gt;"4bdaf48e2557ab099f000015",
+      "_type"=&gt;"Assignment"}}})</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="07_persistence/strategies/5">
+<h1>Updating</h1>
+
+<pre class="sh_ruby"><code>jake = Person.where(:last_name =&gt; "Sully").first
+jake.first_name = "Jake"
+jake.save
+
+# MongoDB query:
+update({"_id"=&gt;"4bdaf48c2557ab099f000014"},
+  {"$set"=&gt;{
+    "updated_at"=&gt;Fri Apr 30 15:20:20 UTC 2010,
+    "first_name"=&gt;"Jake"}})</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="07_persistence/strategies/6">
+<h1>Updating embeds one</h1>
+
+<pre class="sh_ruby"><code>jake = Person.where(:last_name =&gt; "Sully").first
+jake.contact_info.handle = "pandora_rox"
+jake.save
+
+# MongoDB query:
+update({"_id"=&gt;"4bdaf48c2557ab099f000014",
+  "contact_info._id"=&gt;"4bdaf5d42557ab099f000016"},
+  {"$set"=&gt;{
+    "contact_info.handle"=&gt;"pandora_rox"}})</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="07_persistence/strategies/7">
+<h1>Updating embeds many</h1>
+
+<pre class="sh_ruby"><code>jake = Person.where(:last_name =&gt; "Sully").first
+assignment = jake.assignments.first
+assignment.name = "Avatar Spy"
+assignment.save
+
+# MongoDB query:
+update({"_id"=&gt;"4bdaf48c2557ab099f000014",
+  "assignments._id"=&gt;"4bdaf48e2557ab099f000015"},
+  {"$set"=&gt;{
+    "assignments.0.name"=&gt;"Avatar Spy"}})</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="07_persistence/strategies/8">
+<h1>Deleting</h1>
+
+<pre class="sh_ruby"><code>jake = Person.where(:last_name =&gt; "Sully").first
+jake.destroy
+
+# MongoDB query:
+remove({:_id=&gt;"4bd9e4622557ab0676000002"})</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="07_persistence/strategies/9">
+<h1>Deleting embeds one</h1>
+
+<pre class="sh_ruby"><code>jake = Person.where(:last_name =&gt; "Sully").first
+jake.contact_info.destroy
+
+# MongoDB query:
+update({"_id"=&gt;"4bdaf48c2557ab099f000014"},
+  {"$unset"=&gt;{
+    "contact_info"=&gt;true}})</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="07_persistence/strategies/10">
+<h1>Deleting embeds many</h1>
+
+<pre class="sh_ruby"><code>jake = Person.where(:last_name =&gt; "Sully").first
+assignment = jake.assignments.first
+assignment.delete
+
+# MongoDB query:
+update({"_id"=&gt;"4bdaf48c2557ab099f000014"},
+  {"$pull"=&gt;{
+    "assignments"=&gt;{
+    "_id"=&gt;"4bdaf48e2557ab099f000015"}}})</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content smbullets" ref="08_extras/extras/1">
+<h1>Extras</h1>
+
+<ul>
+<li>Dirty Attributes</li>
+<li>Versioning</li>
+<li>Timestamps</li>
+<li>Keys</li>
+<li>Indexes</li>
+<li>Caching</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="08_extras/extras/2">
+<h1>Dirty Attributes</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="08_extras/extras/3">
+<h1>Dirty Attributes</h1>
+
+<pre class="sh_ruby"><code>person = Person.where(:first_name =&gt; "Jake").first
+
+# anything changed?
+person.changed? # =&gt;  false
+
+person.first_name = "Toruk"
+
+# now has anything changed?
+person.changed? # =&gt;  true
+
+# first name change?
+person.first_name_changed? # =&gt; true</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="08_extras/extras/4">
+<h1>Dirty Attributes: Tracking changes</h1>
+
+<pre class="sh_ruby"><code>person.changed? # =&gt;  true
+
+person.first_name_was # =&gt; "Jake"
+
+person.first_name_change #  =&gt; [ "Jake", "Toruk" ]
+
+person.changes # =&gt; { "first_name" =&gt; [ "Jake", "Toruk" ] }</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="08_extras/extras/5">
+<h1>Versioning</h1>
+
+<pre class="sh_ruby"><code>class Person
+  include Mongoid::Document
+  include Mongoid::Versioning
+end
+
+person.first_name # =&gt; "Jake"
+person.update_attributes(:first_name =&gt; "Toruk")
+
+person.first_name # =&gt; "Toruk"
+person.versions.last.first_name # =&gt; "Jake"</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="08_extras/extras/6">
+<h1>Timestamps</h1>
+
+<pre class="sh_ruby"><code>class Person
+  include Mongoid::Document
+  include Mongoid::Timestamps
+end
+
+person = Person.create(:first_name =&gt; "Jake")
+person.created_at # Fri Apr 30 19:09:31 UTC 2010
+person.updated_at # Fri Apr 30 19:09:31 UTC 2010
+
+person.update_attributes(:first_name =&gt; "Toruk")
+person.created_at # Fri Apr 30 19:09:31 UTC 2010
+person.updated_at # Fri Apr 30 19:09:33 UTC 2010</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="08_extras/extras/7">
+<h1>Indexes</h1>
+
+<pre class="sh_ruby"><code>class Person
+  include Mongoid::Document
+
+  index :last_name, :unique =&gt; true
+end
+
+# index creation can sometimes take a long time...
+
+# so we only create them when you want them:
+rake db:create_indexes</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content smbullets incremental" ref="09_configuration/configuration/1">
+<h1>Configuration</h1>
+
+<ul>
+<li>Dynamic Fields</li>
+<li>Using ObjectIds</li>
+<li>Persisting type information</li>
+<li>Connections</li>
+<li>Configuring options</li>
+<li>Configuring logging</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="09_configuration/configuration/2">
+<h1>Dynamic Fields</h1>
+
+<pre class="sh_ruby"><code>class Location
+  include Mongoid::Document
+
+  field :lat_long, :type =&gt; Array
+end
+
+# save stuff that wasn't declared, you can then get access
+loc = Location.new(:name =&gt; "Tree of Voices")
+loc.name # =&gt; "Tree of Voices"</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="09_configuration/configuration/3">
+<h1>Intelligent Defaults</h1>
+
+<h2><code>config/mongoid.yml</code></h2>
+
+<pre class="sh_ruby"><code>
+development:
+  # runs on localhost with default mongodb port
+  database: myapp_dev</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="09_configuration/configuration/4">
+<h1>Works seamlessly on Heroku</h1>
+
+<h2><code>config/mongoid.yml</code></h2>
+
+<pre class="sh_ruby"><code>
+production:
+  uri: &lt;%= ENV[&#x201C;MONGOHQ_URL&#x201D;] %&gt;</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="10_master_slave/master_slave/1">
+<h1>Master / Slave support</h1>
+
+<ul>
+<li>Configuring</li>
+<li>Slave reads</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="10_master_slave/master_slave/2">
+<h1>Configuring Master / Slave</h1>
+
+<pre class="sh_ruby"><code>defaults: &amp;defaults
+  host: localhost
+  slaves:
+    - host: slave1.local
+      port: 27018
+    - host: slave2.local
+      port: 27019
+
+development:
+  &lt;&lt;: *defaults
+  database: development</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="10_master_slave/master_slave/3">
+<h1>Slave Reads per model</h1>
+
+<pre class="sh_ruby"><code>class Location
+  include Mongoid::Document
+
+  enslave
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="10_master_slave/master_slave/4">
+<h1>Slave Reads per query</h1>
+
+<pre class="sh_ruby"><code>Location.where(:lat_long.near =&gt; [30, 30]).enslave</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="11_end/end/1">
+<h1>Thanks for listening!</h1>
+
+<ul>
+<li><p>Slides are available here: <br><code>http://github.com/railsjedi/mongoseattle</code></br></p>
+<li><p>Mongoid Site: <code>http://mongoid.org</code></p></li>
+<li><p>Mongoid Source: <code>http://github.com/durran/mongoid</code></p></li>
+</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="11_end/end/2">
+<h1>Questions?</h1></div>
+</div>
+</div>
+
+</body>
+</html>
