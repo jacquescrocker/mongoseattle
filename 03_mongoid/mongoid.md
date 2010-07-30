@@ -59,7 +59,7 @@
 
 * Mongoid gives you access at every step to the MongoDB Ruby Driver
 
-* `Post.db #=> #<Mongo::DB:0x1037f6468 ...>`
+* `Post.collection #=> #<Mongo::Collection:0x1037f6468 ...>`
 
 * Ruby Driver tutorial: http://www.mongodb.org/display/DOCS/Ruby+Tutorial
 
